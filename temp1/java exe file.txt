@@ -1,0 +1,22 @@
+javap to see details of particular exe file
+javadoc -> (it must be java file) 
+
+// javadoc creation
+
+D:\Presidio_Intern\temp1>set classpath=d:/temp3;.;
+D:\Presidio_Intern\temp1>javadoc Hello1.java
+D:\Presidio_Intern\temp1>index.html
+
+//jar file ->group multiple java file/packages (may consists of many directories) and make it as single excutable file 
+//useful - since to no need to set large class path 
+//compress into single directory
+
+D:\Presidio_Intern\temp3>jar -cvf myjar.jar * -> jar file for all packages u want to use;
+
+D:\Presidio_Intern\temp1>set classpath=; ->to remove curr class path
+
+D:\Presidio_Intern\temp1>set classpath=D:\Presidio_Intern\myjar.jar;.; // add jarfile location(anywhere) to 
+curr directory where u excute curr java file using those packages. 
+
+D:\Presidio_Intern\temp1>javac Hello1.java
+ 
