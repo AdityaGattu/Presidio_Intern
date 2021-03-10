@@ -44,6 +44,9 @@ package MyPackage;
 import java.awt.*; 
 class MyClass{}
 
+ans=2
+
+
 Question 4)
 A byte can be of what size 
 1) -128 to 127 
@@ -51,6 +54,7 @@ A byte can be of what size
 3) -255 to 256 
 4)depends on the particular implementation of the Java Virtual machine 
 
+ans=1
 
 Question 5)
 What will be printed out if this code is run with the following command line? 
@@ -66,6 +70,7 @@ System.out.println(argv[2])
 3) morning 
 4) Exception raised: "java.lang.ArrayIndexOutOfBoundsException: 2" 
  
+ans=2
 
 Question 6)
 Which of the following are keywords or reserved words in Java? 
@@ -74,7 +79,8 @@ Which of the following are keywords or reserved words in Java?
 3) goto 
 4) while 
 5) case 
- 
+
+ans= if,goto,while,case
 
 Question 7)
 Which of the following are legal identifiers 
@@ -85,6 +91,9 @@ Which of the following are legal identifiers
 5) $anothervar 
 6) #myvar 
 
+//Each identifier must have at least one character. The first character must be picked from: alpha, underscore, or dollar sign.
+//The first character can not be a digit. The rest of the characters (besides the first) can be from: alpha, digit, underscore, or dollar sign
+ans= 2,3,4,5
 
 Question 8)
 What will happen when you compile and run the following code? 
@@ -99,7 +108,8 @@ public class MyClass{
 2) null 
 3) 1 
 4) 0 
- 
+
+ans=4)0.
 
 Question 9)
 What will happen if you try to compile and run the following code? 
@@ -113,6 +123,8 @@ public class Q {
 2) Error anar is referenced before it is initialized 
 3) 2 
 4) Error: size of array must be defined 
+
+ans->opt3
 
 
 Question 10)
@@ -128,7 +140,8 @@ public class Q {
 2) null 
 3) 0 
 4) 5 
- 
+
+ans->opt3
 
 Question 11)
 
@@ -148,6 +161,8 @@ public class Mine extends MineBase      {
 2) Error: ar is used before it is initialized 
 3) Error Mine must be declared abstract 
 4) IndexOutOfBoundes Error 
+
+ans->opt3
 
 
 Question 12)
@@ -169,6 +184,8 @@ int i=1;
 3) one, two, default 
 4) default 
 
+ans->opt3
+
 
 Question 13)
 What will be printed out if you attempt to compile and run the following code? 
@@ -188,6 +205,8 @@ switch (i) {
 2) default, zero 
 3) error default clause not defined 
 4) no output displayed 
+
+ans->opt2
 
 
 Question 14)
@@ -214,6 +233,7 @@ int j=2;
 if(i==1 &| j==2) 
         System.out.println("OK");
 
+ans->opt2,op3
 
 Question 15)
 What will be output if you try to compile and run the following code, but there is 
@@ -241,7 +261,8 @@ public int amethod() {
 2 No such file found ,-1 
 3) No such file found, Doing finally, -1 
 4) 0 
- 
+
+ans->opt3
 
 Question 16)
 Which of the following statements are true? 
@@ -250,6 +271,7 @@ Which of the following statements are true?
 3) Private methods cannot be overloaded
 4) An overloaded method cannot throw exceptions not checked in the base class
  
+ans->1
 
 Question 17)
 What will happen if you attempt to compile and run the following code? 
@@ -310,6 +332,7 @@ public static void main(String argv[]){
 3) Value for i=2 value for j=2 
 4) Value for i=3 value for j=1 
  
+ans=opt->1,2
 
 Question 23)
 
@@ -326,6 +349,8 @@ public class Scope extends Base{
 2) void amethod(long i)throws Exception {} 
 3) void amethod(long i){} 
 4) public void amethod(int i) throws Exception {} 
+
+
 
 
 Question 24)
