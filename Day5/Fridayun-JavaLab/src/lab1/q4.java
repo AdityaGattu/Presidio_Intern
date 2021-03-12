@@ -1,4 +1,4 @@
-package Day5;
+package lab1;
 
 public class q4 {
 	 public static void main(String[] args) { 
@@ -30,8 +30,9 @@ public static void count(String x){
 }
 
 /*
- * letter: 23
+* letter: 23
 space: 9
 number: 10
 other: 6
 */
+

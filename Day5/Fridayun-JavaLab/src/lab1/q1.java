@@ -1,8 +1,8 @@
-package Day5;
+package lab1;
 
 public class q1 {
 
-	 public static void main(String[] args) { 
+	public static void main(String[] args) { 
 	     // int, double, float 
 	   int a, b; 
 	   a = 15; 
