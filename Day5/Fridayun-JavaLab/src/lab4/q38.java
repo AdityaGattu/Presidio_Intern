@@ -13,7 +13,6 @@ public class q38 {
 	
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
-		
 		for(int i=0;i<n;i++)
 		{
 			System.out.print(fib(i)+" ");

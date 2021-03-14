@@ -2,7 +2,7 @@ package lab4;
 
 import java.util.*;
 
-// 34. Write a program to find average of odd number below range? 
+// 34.Write a program to find average of odd number below range? 
 
 public class q34 {
 	public static void main(String[] args) {

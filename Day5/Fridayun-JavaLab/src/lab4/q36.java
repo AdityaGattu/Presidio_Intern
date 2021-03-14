@@ -9,7 +9,6 @@ public class q36 {
 	public static void main(String[] args) {
 		
 		Scanner s=new Scanner(System.in);
-		
 		String s1=s.nextLine();
 		int start=0;
 		int end=s1.length()-1;

@@ -1,8 +1,7 @@
 package lab4;
 
 import java.util.Scanner;
-
-/*41. Write a program to print the format below using nested for loop 
+/* 41. Write a program to print the format below using nested for loop 
   1                                         0 
   2  3                                     0  0 
   4  5  6                                 0  0  0 
