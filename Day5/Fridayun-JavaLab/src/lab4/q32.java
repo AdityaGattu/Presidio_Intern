@@ -5,7 +5,8 @@ import java.util.Scanner;
 //32. Write a program to determine given number is prime or not? 
 
 public class q32 {
-public static void main(String[] args) {
+
+	public static void main(String[] args) {
 	
 	Scanner s=new Scanner(System.in);
 	
