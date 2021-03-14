@@ -16,6 +16,7 @@ public class AbstractClassDemo {
 		//dependency injection
 		brush.paint=new RedPaint();
 		brush.doPaint();
+		//Paint p=new BluePaint();
 	}
 }
 //paintbrush is closed for modification but open for extension
