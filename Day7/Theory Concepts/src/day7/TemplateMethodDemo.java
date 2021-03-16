@@ -8,6 +8,7 @@ public class TemplateMethodDemo {
 	}
 }
 abstract class Dominos{
+	
 	final public void processToCook() {//template methods - parts
 		System.out.println("domino chief cook has defined the process...");
 	}

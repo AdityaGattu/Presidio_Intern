@@ -1,4 +1,5 @@
 package day7;
+
 public class CommandDemo {
 	public static void main(String[] args) {
 		Tv tv=new Tv();
