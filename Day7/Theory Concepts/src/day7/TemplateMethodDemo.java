@@ -1,4 +1,5 @@
 package day7;
+
 public class TemplateMethodDemo {
 	public static void main(String[] args) {
 		Dominos dominos=new UdhayPizza();
