@@ -1,0 +1,16 @@
+<!ELEMENT books (book)+ >
+<!ELEMENT book (name,author,price)>
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT author (#PCDATA) >
+<!ELEMENT price (#PCDATA) >
+
+
+<!ATTLIST book bid CDATA #REQUIRED>
+
+<!--
+
+#REQUIRED
+#IMPLIED
+#FIXED "B1"
+#"B1"
+-->
