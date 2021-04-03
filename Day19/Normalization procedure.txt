@@ -1,0 +1,40 @@
+Normalisation steps
+1. List out all the fields in the invoice.
+invno - pk
+invdate
+customerid
+customername
+customeraddress
+discount
+The moment you have a set of fields,  imediately find a unique key (a key which can be used as an identity)
+identifying the primary key
+Remove all the calcuated fields.
+From the list of the fields, identify those fields whose field value getting added multiple times in the same invoice and make them as a seperate table.
+invno - pk
+itemid - pk
+qty
+The moment you have a seperate table, identify a linking key between the two tables
+now again find out the primary key for this new table
+since no key is unique - we go for composite key
+the momemnt you have a composite key
+Identify those fields which are partially dependent on the composite key, or more dependant on any one key
+remove those  fields and make them as a seperate table
+itemid - pk
+itemdesc
+unit
+price
+the new table needs a linking key
+identify the primarykey
+Now go back to the first table, identify all those fields which are not fully dependent on the primary key
+customer id- pk
+customername
+customeraddress
+find  the linking key
+identify the primary key
+	
+Invoice master		invoice trans        itemmaster		customer			user
+invid			invid			itemid		customerid			userid
+invdate			itemid			itemdesc	customername			username
+customerid		qty			price		customeraddress			password										customercellphone		flag
+								customeraccountdetails
+								customergstnumber
