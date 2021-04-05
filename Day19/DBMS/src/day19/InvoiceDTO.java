@@ -13,9 +13,9 @@ public class InvoiceDTO implements Serializable,Cloneable {
 		// TODO Auto-generated constructor stub
 	}
 	
-	private InvoiceDTO obj;
+	private static InvoiceDTO obj;
 	
-	synchronized public InvoiceDTO getIvInvoiceDTO() {
+	synchronized public static InvoiceDTO getIvInvoiceDTO() {
 		if(obj==null) {
 			return new InvoiceDTO();
 		}

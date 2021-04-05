@@ -83,18 +83,53 @@ public class CustomerDTO implements Serializable,Cloneable{
 	public void setCaccountdetails(String caccountdetails) {
 		this.caccountdetails = caccountdetails;
 	}
-	
+
+
 	@Override
 	public int hashCode() {
-		// TODO Auto-generated method stub
-		return super.hashCode();
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((caccountdetails == null) ? 0 : caccountdetails.hashCode());
+		result = prime * result + ((caddress == null) ? 0 : caddress.hashCode());
+		result = prime * result + cid;
+		result = prime * result + ((cname == null) ? 0 : cname.hashCode());
+		result = prime * result + cno;
+		return result;
 	}
-	
+
+
 	@Override
 	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
-		return super.equals(obj);
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CustomerDTO other = (CustomerDTO) obj;
+		if (caccountdetails == null) {
+			if (other.caccountdetails != null)
+				return false;
+		} else if (!caccountdetails.equals(other.caccountdetails))
+			return false;
+		if (caddress == null) {
+			if (other.caddress != null)
+				return false;
+		} else if (!caddress.equals(other.caddress))
+			return false;
+		if (cid != other.cid)
+			return false;
+		if (cname == null) {
+			if (other.cname != null)
+				return false;
+		} else if (!cname.equals(other.cname))
+			return false;
+		if (cno != other.cno)
+			return false;
+		return true;
 	}
+	
+	
 
 	
 }

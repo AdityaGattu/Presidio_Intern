@@ -91,7 +91,7 @@ public class InvoiceDAOImpl implements InvoiceDAO,Cloneable{
 		
 		try {
 			Connection con=DBUtility.getConnection();
-			PreparedStatement ps=con.prepareStatement("insert into invoicemaster where invid=?,cid=?,invdate=?");
+			PreparedStatement ps=con.prepareStatement("insert into invoicemaster values (?,?,?)");
 			ps.setInt(1, i.getInvid());
 			ps.setInt(2, i.getCid());
 			ps.setDate(3, i.getInvdate());
