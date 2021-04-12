@@ -49,4 +49,14 @@
     <servlet-name>logoutServlet</servlet-name>
     <url-pattern>/logoutServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>sd</display-name>
+    <servlet-name>sd</servlet-name>
+    <servlet-class>day21.sd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sd</servlet-name>
+    <url-pattern>/sd</url-pattern>
+  </servlet-mapping>
 </web-app>

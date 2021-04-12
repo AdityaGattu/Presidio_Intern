@@ -1,0 +1,18 @@
+<!-- 
+	1. directive tags
+		1a- page directive tag - <%@ page %>
+		1b- taglib directive tag <%@ taglib  %> - you can create more tags - custom tags for jsp
+		1c- include directive tag<%@ include %>
+	2. Scripting Tags
+		2a.  Declaration tag <%! %>
+		2b.  Scriplet tag <% %>
+		2c.  Expression tag<%= %>
+	3. Standard Action Tags
+		useBean <jsp:useBean/>
+		include <jsp:include/>
+		forward
+		setProperty
+		getProperty
+	4. Implicit Objects
+		request,response,session,application,out,config,exception,page,pageContext - 9 implicit objects	
+ -->

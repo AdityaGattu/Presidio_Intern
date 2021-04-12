@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>You are already loged in.........<a href="login.html">Click Here to Re-login...</a></h1>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="register.do" method="post">
+	<input type="hidden" name="formid" value="register">
+		UserName:<input type="text" name="uname">
+		PassWord:<input type="password" name="upass">
+		
+		<input type="submit" value="Register">
+	</form>
+</body>
+</html>

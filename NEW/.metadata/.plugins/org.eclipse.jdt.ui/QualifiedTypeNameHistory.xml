@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="control.LoginAction"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="daopack.DBUtility"/>
+    <fullyQualifiedTypeName name="daopack.UserDTO"/>
+    <fullyQualifiedTypeName name="daopack.UserDAO"/>
+    <fullyQualifiedTypeName name="daopack.UserDAOImpl"/>
+    <fullyQualifiedTypeName name="daopack.ItemMasterDAOImpl"/>
+</qualifiedTypeNameHistroy>
