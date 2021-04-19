@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="inherpack.ShoeFactory" table="shoetable">
+        <id name="sid" type="int" unsaved-value="0">
+            <generator class="increment"/>
+        </id>               
+        <property name="shoeName" />
+        
+	  <joined-subclass name="inherpack.BataShoeFactory" table="batatable">
+	  	<key column="sid"/>
+      	<property name="bataName" type="string"/>      		    
+      </joined-subclass>
+      
+       <joined-subclass name="inherpack.LakhaniShoeFactory" 	table="lakhanitable">
+	      	<key column="sid"/>
+	      	<property name="lakhaniName" type="string"/>
+	   </joined-subclass>
+	        
+	</class>
+</hibernate-mapping>

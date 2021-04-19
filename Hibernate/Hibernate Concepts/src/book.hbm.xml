@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="single.BookPojo" table="book">
+   
+        <id name="bno" unsaved-value="0" type="int">
+        	<generator class="increment"/>
+        </id>
+        <property name="bname"/>
+        <property name="bauthor" not-null="true"/>
+        <property name="price">
+        	<column name="rate" sql-type="NUMERIC(12,2)"/>
+        </property>
+        <property name="comment" type="serializable">
+        	<column name="comments" sql-type="blob"/>
+        </property>
+        
+     </class>
+
+</hibernate-mapping>
