@@ -25,13 +25,3 @@ public class InherClient {
 		HibernateUtility.closeSession(null);
 	}
 }
-/*
- *
- * model 2: 
- * Hibernate: select max(sid) from shoetable
-Hibernate: insert into shoetable (shoeName, sid) values (?, ?)
-Hibernate: insert into shoetable (shoeName, sid) values (?, ?)
-Hibernate: insert into batatable (bataName, sid) values (?, ?)
-Hibernate: insert into shoetable (shoeName, sid) values (?, ?)
-Hibernate: insert into lakhanitable (lakhaniName, sid) values (?, ?)
-*/

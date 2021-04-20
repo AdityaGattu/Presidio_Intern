@@ -1,0 +1,34 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	
+    <class name="manytomany.Student" table="STUDENT">
+   
+        <id name="sid" type="java.lang.Integer">			
+			<generator class="hilo" />
+		</id>
+        <property name="sname" />
+        <property name="marks" />
+ 
+      <set name="trainings" table ="STUDENT_HAS_TRAINING" inverse="false" cascade="all" >
+        <key column="STUDENT_SID"/>
+        <many-to-many column="TRAINING_TID" class="manytomany.Training"/>
+	  </set>
+	</class>
+	
+	
+	<class name="manytomany.Training" table="TRAINING">
+		<id name="tid" type="int" unsaved-value="0">
+			<generator class="hilo"/>
+		</id>
+		<property name="tname"/>
+		<property name="startDate"/>
+		
+		<set name="students" table ="STUDENT_HAS_TRAINING" cascade="all" >
+        	<key column="TRAINING_TID"/>
+        	<many-to-many column="STUDENT_SID" class="manytomany.Student"/>
+		</set>
+	</class>
+	
+</hibernate-mapping>

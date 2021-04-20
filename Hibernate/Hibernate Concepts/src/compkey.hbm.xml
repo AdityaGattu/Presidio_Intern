@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	 <class name="compkeypack.ItemTrans" table="INVTRAN">
+        <composite-id name="compKey" class="compkeypack.CompKey">
+        	 <key-property name="inv_id" type="int"/>
+         	 <key-property name="item_id" type="int"/>
+        </composite-id> 
+		<property name="qty" />
+	</class>
+</hibernate-mapping>
