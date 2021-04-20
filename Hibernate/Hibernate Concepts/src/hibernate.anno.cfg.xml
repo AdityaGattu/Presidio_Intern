@@ -6,7 +6,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost/codab4</property>
+        <property name="connection.url">jdbc:mysql://localhost/codac4</property>
         <property name="connection.username">adityag</property>
         <property name="connection.password">adityag</property>
 
@@ -37,13 +37,14 @@
 		<mapping class="annopack.minherpack.Car" />
 		<mapping class="annopack.minherpack.Maruti" />
 		<mapping class="annopack.minherpack.Visitor" />
-		<mapping class="annopack.minherpack.VisitorImpl" />   -->
+		<mapping class="annopack.minherpack.VisitorImpl" />   
 		
 		<mapping class="annopack.mone2manypack.Address" />
 		<mapping class="annopack.mone2manypack.Employee" />
-		<mapping class="annopack.mone2manypack.Training" />
+		<mapping class="annopack.mone2manypack.Training" /> -->
 		
-		
+		<mapping class="annopack.pojopack.Employee"/>
+		<mapping class="annopack.pojopack.AccountBean"/>
     </session-factory>
 
 </hibernate-configuration>
