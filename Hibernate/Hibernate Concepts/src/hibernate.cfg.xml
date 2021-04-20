@@ -29,20 +29,20 @@
         <property name="show_sql">true</property>
 
         <!-- Drop and re-create the database schema on startup -->
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
 
-		<!--  mapping resource="compkey.hbm.xml"/>  
-		
+		 <mapping resource="manytomany.hbm.xml"/>  
+		<!-- 
 		<mapping class="annopack.minherpack.Automobile" />
 		<mapping class="annopack.minherpack.Car" />
 		<mapping class="annopack.minherpack.Maruti" />
 		<mapping class="annopack.minherpack.Visitor" />
-		<mapping class="annopack.minherpack.VisitorImpl" />   -->
+		<mapping class="annopack.minherpack.VisitorImpl" />  
 		
 		<mapping class="annopack.mone2manypack.Address" />
 		<mapping class="annopack.mone2manypack.Employee" />
 		<mapping class="annopack.mone2manypack.Training" />
-		
+		 -->
 		
     </session-factory>
 
