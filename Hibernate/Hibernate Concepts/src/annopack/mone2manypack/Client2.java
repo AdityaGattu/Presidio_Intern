@@ -59,3 +59,15 @@ public class Client2 {
 		}
 	}
 }
+
+/*
+ * Hibernate: select training_.tid, training_.tname as tname2_ from Training training_ where training_.tid=?
+Hibernate: select training_.tid, training_.tname as tname2_ from Training training_ where training_.tid=?
+Hibernate: insert into employee (ename, esalary, eid) values (?, ?, ?)
+Hibernate: insert into Training (tname, tid) values (?, ?)
+Hibernate: insert into Training (tname, tid) values (?, ?)
+Hibernate: insert into Employee_has_Training (employee_eid, trainings_tid) values (?, ?)
+Hibernate: insert into Employee_has_Training (employee_eid, trainings_tid) values (?, ?)
+jpa
+java
+*/
