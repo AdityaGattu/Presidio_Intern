@@ -1,0 +1,5 @@
+enterprise java bean - EJB competiter for spring 
+- con : no good practices - interface segregation aspect oritented priciples etc
+- pro :  good platform
+
+best - spring (past 7 yrs)
