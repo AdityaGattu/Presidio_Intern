@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-15">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/aopalliance.jar"/>
+	<classpathentry kind="lib" path="lib/aspectjtools-1.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp-1.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool.jar"/>
+	<classpathentry kind="lib" path="lib/javax-inject.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-8.0.20.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aop-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aspects-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-expression-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-jdbc-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-orm-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-oxm-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-test-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-tx-3.2.3.release.jar"/>
+	<classpathentry kind="lib" path="lib/spring-web-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-webmvc-4.0.6.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
