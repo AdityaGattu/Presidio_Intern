@@ -12,7 +12,7 @@ public class Client {
 		db.testDb();
 	}
 }
-
+	
 /*
 jdbc:mysql://localhost/codaspring, UserName=adityag@localhost, MySQL Connector/J
 no of rows...:2

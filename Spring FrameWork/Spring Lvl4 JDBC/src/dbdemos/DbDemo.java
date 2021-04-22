@@ -20,7 +20,7 @@ public class DbDemo {
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
-	
+		
 	public void testDb() {
 		try {
 			System.out.println(dataSource.getConnection());

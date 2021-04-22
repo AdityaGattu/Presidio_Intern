@@ -1,0 +1,87 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:tx="http://www.springframework.org/schema/tx"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<bean id="ppc" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>dbconfig.properties</value>
+		</property>
+	</bean>
+	
+	<bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="username" value="${username}"/>
+		<property name="password" value="${password}"/>
+		<property name="url" value="${url}"/>
+		<property name="driverClassName" value="${driver}"/>
+	</bean>
+	
+	<bean id="transfer" class="sprintrans.MoneyTransferBeanImpl" autowire="byName">
+		
+	</bean>
+	
+	<bean id="businessbean" class="sprintrans.BusinessBeanImpl">
+		<property name="mtb">
+			<ref bean="transadvisedbean"/>
+		</property>
+	</bean>
+
+	<bean id="transadvisedbean" 
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="target"><ref bean="transfer"/></property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="credit">PROPAGATION_REQUIRED</prop>
+				<prop key="debit">PROPAGATION_REQUIRED,-Exception</prop>
+			</props>
+		</property>
+		
+		<property name="transactionManager">
+			<ref bean="transactionManager"/>
+		</property>		
+	</bean>
+	<bean id="businessadvisedbean" 
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="target"><ref bean="businessbean"/></property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="doTransaction">PROPAGATION_REQUIRES_NEW</prop>			
+			</props>
+		</property>
+		<property name="transactionManager">
+			<ref bean="transactionManager"/>
+		</property>		
+	</bean>	
+	<bean id="transactionManager" 
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+			<property name="dataSource">
+				<ref bean="datasource"/>
+			</property>
+	</bean>
+</beans>
+
+<!-- 
+
+Propagation Behavior
+
+1.	PROPAGATION_MANDATORY -  will always join a running transasction and throws an exception if no 
+							transaction is running.
+2.	PROPAGATION_NEVER - will never start a transaction, neither it joins, 
+										and it even throws a exception if a transaction is running
+3.	PROPAGATION_NOT_SUPPORTED - will never joins a transaction, neither starts, nor throws exception
+4.	PROPAGATION_REQUIRED - will always join a transaction, never starts a transaction if transaction 
+					is running but if no transaction is running, it starts a new transaction
+5.	PROPAGATION_REQUIRES_NEW - will always start a new transaction and never joins one.
+6.	PROPAGATION_SUPPORTS - will not start but join a running transaction
+7.	PROPAGATION_NESTED ** - This transaction attribute is a new one.
+ -->
+
+
+
+
