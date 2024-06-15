@@ -1,5 +1,6 @@
 package control;
 
+import static io.github.pixee.security.jakarta.PathValidator.validateDispatcherPath;
 import java.util.Properties;
 
 import javax.servlet.RequestDispatcher;
@@ -19,7 +20,7 @@ public class RequestProcessor {
 		
 		String nextPage=configProp.getProperty(result);
 		
-		RequestDispatcher rd=request.getRequestDispatcher(nextPage);
+		RequestDispatcher rd=request.getRequestDispatcher(validateDispatcherPath(nextPage));
 		
 		rd.forward(request, response);
 		}catch(Exception e) {
