@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>This is new jsp header file.....</h1>
-<h2>Company Name : <%= request.getParameter("cname") %></h2>
+<h2>Company Name : <%=org.owasp.encoder.Encode.forHtml( request.getParameter("cname") )%></h2>
 </body>
 </html>
