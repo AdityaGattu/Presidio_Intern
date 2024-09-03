@@ -1,5 +1,7 @@
 package sms;
 
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import java.net.*;
 
 public class Java_sms_httprequest {
@@ -23,7 +25,7 @@ public class Java_sms_httprequest {
 
 
 
-		URL url = new URL(requestUrl);
+		URL url = Urls.create(requestUrl, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS);
 		HttpURLConnection uc = (HttpURLConnection)url.openConnection();
 
 		System.out.println(uc.getResponseMessage());
