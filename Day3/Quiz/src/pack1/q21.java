@@ -9,7 +9,9 @@ public class q21 {
         inner: 
          for(j=1; j<3; j++) { 
                     if (j==2) 
-                    continue outer; 
+                    {
+                        continue outer;
+                    } 
                     System.out.println("Value for i=" + i + " Value for j=" +j); 
                     } 
         } 
